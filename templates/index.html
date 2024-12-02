@@ -1,0 +1,403 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-col md:flex-row m-4 md:m-0 p-2 border-2 bg-white border-gray-100 rounded-md"
+    >
+      <div
+        class="flex w-full justify-center md:w-4/12 bg-cyan-200/40 rounded-md border border-cyan-200 mb-4"
+      >
+        <div class="mx-2">
+          <div class="flex flex-row md:flex-col justify-center">
+            <div class="flex flex-row md:flex-col">
+              <div class="flex justify-center items-center">
+                <img
+                  class="w-2/5 my-6 rounded-md"
+                  src="{% static "icons/rm.png" %}"
+                  alt=""
+                />
+              </div>
+
+              <div class="mx-2 my-5 border-2 border-cyan-500"></div>
+
+              <div class="space-y-2 break-all">
+                <div class="flex justify-start items-center space-x-4">
+                  <img src="" alt="" class="h-10" />
+                  <div class="text-xl font-bold">PROFILE</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/whatsapp.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">+55 11 98181 5217</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/mail.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">rmachadosp@gmail.com</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img
+                    src="{% static "icons/birthday-cake" %}.svg"
+                    alt=""
+                    class="h-6"
+                  />
+                  <div class="text-sm">25/03/1975</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/world.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">Brasileiro</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/heart.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">Convivente</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <div class="mx-2 my-5 border-2 border-cyan-500"></div>
+
+            <div class="space-y-2">
+              <div class="flex justify-start items-center space-x-4">
+                <img src="{% static "icons/language.svg" %}" alt="" class="h-10" />
+                <div class="text-xl font-bold">IDIOMAS</div>
+              </div>
+              <div class="flex md:flex-col space-x-4 md:space-x-0">
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/speaker.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">Português: Língua Materna</div>
+                </div>
+                <div class="flex justify-start items-center space-x-2">
+                  <img src="{% static "icons/speaker.svg" %}" alt="" class="h-6" />
+                  <div class="text-sm">Inglês: Fluênte</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:ms-2 bg-slate-100 rounded-md border">
+        <div
+          class="flex my-6 text-2xl font-semibold justify-center items-center text-cyan-900 m-2"
+        >
+          Reynaldo André Perez Machado
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/target.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">OBJETIVOS</div>
+          </div>
+          <div class="md:text-base text-justify">
+            Integrar uma instituição onde possa contribuir com minha experiência
+            em gestão de negócios, desenvolvimento de produtos, marketing,
+            tecnologia e sólida experiência em processos para promover inovação
+            e crescimento sustentável por meio de estratégias eficazes e
+            alinhadas às metas organizacionais.
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/avatar.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">PERFIL</div>
+          </div>
+          <div class="md:text-base text-justify">
+            Profissional proativo com características empreendedoras e sólida
+            experiência nas áreas de novos produtos, marketing e valoração.
+            Expertise em criação e implementação de projetos com foco em
+            negociação com parceiros, desenvolvimento de processos e
+            normatizações, análises de pricing, mix de produtos, e estratégias
+            de distribuição. Participação ativa na criação e lançamento de
+            linhas de produtos, posicionamento de mercado e negociações com
+            fornecedores.
+          </div>
+          <div class="mx-2">
+            <div class="flex justify-start items-center space-x-4 my-4">
+              <div class="font-semibold text-cyan-900">PONTOS FORTES</div>
+            </div>
+            <div class="md:text-base text-justify">
+              <div class="">
+                Carisma, proatividade e excelente comunicação verbal e escrita.
+              </div>
+              <div class="">Vontade de aprender e crescer continuamente.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/worker.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              EXPERIÊNCIA PROFISSIONAL
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="flex justify-start items-center space-x-4 my-4">
+              <div class="flex flex-col">
+                <div
+                  class="md:text-base text-justify font-semibold text-cyan-900"
+                >
+                  Proprietário | DrycleanUSA Vila Madalena
+                </div>
+                <div class="">(01/2013 – 05/2024)</div>
+              </div>
+            </div>
+            <div class="md:text-base text-justify">
+              <div class="">
+                <li class="text-sm">
+                  Gestão integral de negócio por 12 anos, liderando uma equipe
+                  de 7 colaboradores.
+                </li>
+                <li class="text-sm">
+                  Desenvolvimento de estratégias comerciais e operacionais,
+                  resultando em um serviço reconhecido pela qualidade.
+                </li>
+                <li class="text-sm">
+                  Venda da unidade devido à transformação sociocultural da
+                  região e mudanças nos hábitos de consumo pós-pandemia,
+                  especialmente pela adoção de trabalho remoto.
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="mx-2">
+            <div class="flex justify-start items-center space-x-4 my-4">
+              <div class="flex flex-col">
+                <div
+                  class="md:text-base text-justify font-semibold text-cyan-900"
+                >
+                  Analista de Projetos Especiais e Captação | Fundação São Paulo
+                </div>
+                <div class="">(08/1999 – 10/2014)</div>
+              </div>
+            </div>
+            <div class="md:text-base text-justify">
+              <div class="">
+                <li class="text-sm">
+                  Implantação de normas, processos e procedimentos para
+                  parcerias institucionais.
+                </li>
+                <li class="text-sm">
+                  Elaboração e gestão de novos projetos, com captação de
+                  recursos em agências de fomento.
+                </li>
+                <li class="text-sm">
+                  Desenvolvimento de propostas, pesquisa de patrocinadores e
+                  organização de eventos corporativos.
+                </li>
+                <li class="text-sm">
+                  Criação de materiais estratégicos para a missão filantrópica
+                  da fundação.
+                </li>
+                <li class="text-sm">
+                  Manutenção e fidelização do relacionamento com patrocinadores,
+                  incluindo recepção, reuniões e apresentações.
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="mx-2">
+            <div class="flex justify-start items-center space-x-4 my-4">
+              <div class="flex flex-col">
+                <div
+                  class="md:text-base text-justify font-semibold text-cyan-900"
+                >
+                  Comprador | PLUG USE – Computer Warehouse
+                </div>
+                <div class="">(03/1996 – 03/1999)</div>
+              </div>
+            </div>
+            <div class="md:text-base text-justify">
+              <div class="">
+                <li class="text-sm">
+                  Gerenciamento de linhas de software, suprimentos e acessórios
+                  (2.000 SKUs).
+                </li>
+                <li class="text-sm">
+                  Responsável pela logística de distribuição, criação de
+                  anúncios e definição de estratégias comerciais.
+                </li>
+                <li class="text-sm">
+                  Implantação de projeto de fidelização de clientes e
+                  treinamentos para vendedores.
+                </li>
+                <li class="text-sm">
+                  Supervisão de equipe, geração de relatórios financeiros e
+                  negociações com fornecedores.
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/university.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              FORMAÇÃO ACADÊMICA
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="md:text-base text-justify font-semibold text-cyan-900">
+                Pós-Graduação em Administração de Empresas – PUC-SP (2008)
+              </li>
+              <li class="md:text-base text-justify font-semibold text-cyan-900">
+                Graduação em Ciências Econômicas – PUC-SP (2004)
+              </li>
+              <li class="md:text-base text-justify font-semibold text-cyan-900">
+                Pós-Graduação em Ciências Sociais (interrompido) – PUC-SP (2011)
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/lesson.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              CURSOS E CERTIFICAÇÕES
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">Python Avançado</li>
+              <li class="text-sm">
+                Django Avançado – Web Framework e Rest Framework
+              </li>
+              <li class="text-sm">JavaScript Intermediário</li>
+              <li class="text-sm">HTML, CSS e TailwindCSS Intermediário</li>
+              <li class="text-sm">React e React Native Intermediário</li>
+              <li class="text-sm">Svelte Intermediário</li>
+              <li class="text-sm">Lei Rouanet – Ministério da Cultura</li>
+              <li class="text-sm">Matemática Financeira – PUC-SP</li>
+              <li class="text-sm">Empowerment – Andersen Consulting</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/code.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              ÚLTIMO PROJETO
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">www.pedevizinho.com.br</li>
+              <div class="text-sm">
+                Ecommerce Marketplace totalmente baseado em geolocalizaão para
+                pessoas ou lojas com gateway de pagamento transparênte.
+              </div>
+              <div class="text-xs">PYTHON JAVASCRIPT TAILWINDCSS DJANGO</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img
+              src="{% static "icons/languageExperience.svg" %}"
+              alt=""
+              class="h-8"
+            />
+            <div class="text-2xl font-extrabold text-cyan-900">IDIOMAS</div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">
+                Inglês: Fluente (Cheney School, Oxford – 1992 a 1994)
+              </li>
+              <li class="text-sm">Espanhol: Básico</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/airplane.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              DISPONIBILIDADE
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">Disponível para viagens e relocação.</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/giveLove.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              Voluntariado
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">OXFAM (1993)</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/graph.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">
+              Participação nos Conselhos
+            </div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              <li class="text-sm">
+                CONSUM - Conselho Universitáro - Órgão deliberativo superior da
+                PUC-SP (2010-2014)
+              </li>
+              <li class="text-sm">
+                CAF - Conselho de Administração e Finanças da PUC-SP (2006-2010)
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:m-10">
+          <div class="flex justify-start items-center space-x-4 my-6">
+            <img src="{% static "icons/hobbies.svg" %}" alt="" class="h-8" />
+            <div class="text-2xl font-extrabold text-cyan-900">ATIVIDADES</div>
+          </div>
+
+          <div class="mx-2">
+            <div class="">
+              Cozinhar, Teatro, Viajar, Esportes, Programação, Filmes/Séries
+            </div>
+          </div>
+        </div>
+        <div class="h-4"></div>
+      </div>
+    </div>
+  </body>
+</html>

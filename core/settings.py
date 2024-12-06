@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-qqi_9%q+i19=(xpp@mucs*t=%udmd4fnd4vs*&!eg9ch&3un)=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rmcode.org', 'www.rmcode.org']
 
 
 # Application definition

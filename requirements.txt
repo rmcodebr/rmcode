@@ -1,6 +1,6 @@
 arrow
 asgiref
-backports.zoneinfo
+backports.zoneinfo;python_version<"3.9"
 binaryornot
 certifi
 chardet

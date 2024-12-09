@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    {% if request.get_host == "localhost:8000" %}
+    {% if is_dvelopment %}
     {% load static tailwind_tags %}
-    {% tailwind_css %}    
+    {% tailwind_css %}
+    {% else %}
+    <link href="{% static "css/dist/styles.css" %}" rel="stylesheet" />
     {% endif %}
 
     {% load static %}
 
     
 
-    <link href="{% static "css/dist/styles.css" %}" rel="stylesheet" />
+    
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
     
     <!-- TOKEN GENERATOR -->

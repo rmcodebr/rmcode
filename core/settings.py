@@ -9,7 +9,7 @@ current_host = socket.gethostname()
 # print("Current Host:", current_host)
 
 # Determine the environment based on the host
-if current_host in ["localhost", "127.0.0.1", 'rmcode']:
+if current_host in ["localhost", "127.0.0.1", 'rm']:
     # print("Development Environment")
     from core.settings_dev import *
 else:
@@ -57,6 +57,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.is_development',
             ],
         },
     },

@@ -16,14 +16,14 @@ CSRF_TRUSTED_ORIGINS = [
     'https://www.rmcoder.org',
 ]
 ALLOWED_HOSTS = [
-    'rmcoder.org',
-    'www.rmcoder.org',
+    'rmcode.org',
+    'www.rmcode.org',
     '201.6.156.10',
 ]
 
 INSTALLED_APPS = [
-    'tailwind',
-    'theme',
+    # 'tailwind',
+    # 'theme',
 ]
 
 MIDDLEWARE = []
@@ -44,7 +44,7 @@ LOGGING = {
             ''
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/rm/www/pv/logs/djangoLog.log',
+            'filename': '/home/rm/www/rmcode/logs/djangoLog.log',
             'formatter': 'verbose'
         },
     },

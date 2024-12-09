@@ -1,0 +1,19 @@
+{
+  "name": "RMCode",
+  "short_name": "RMC",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edfbf3",
+  "theme_color": "#47cec9",
+  "categories": ["shop", "ecommerce", "fashion"],
+  "orientation": "portrait",
+  "description": "PV - Marketplace Ecommerce",
+  "purpose": "maskable",
+  "icons": [
+      {
+        "src": "/static/img/rmclogo.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
+}

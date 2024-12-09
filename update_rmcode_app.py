@@ -90,11 +90,11 @@ def update_app(install_deps=False):
     """Main function to update the app."""
     clone_or_update_repo()
 
-    # Install dependencies only if explicitly told to do so
-    if install_deps:
-        install_dependencies()
+    # # Install dependencies only if explicitly told to do so
+    # if install_deps:
+    #     install_dependencies()
 
-    collect_static_files()
+    # collect_static_files()
     restart_gunicorn()
 
 

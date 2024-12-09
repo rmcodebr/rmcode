@@ -22,8 +22,8 @@ ALLOWED_HOSTS = [
 ]
 
 INSTALLED_APPS = [
-    'tailwind',
-    'theme',
+    # 'tailwind',
+    # 'theme',
 ]
 
 MIDDLEWARE = []

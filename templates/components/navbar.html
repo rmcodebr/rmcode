@@ -1,0 +1,45 @@
+{% load static %}
+
+
+ <div class="nav-bar relative mb-2 mx-2 mt-6 transition-[0.9s] z-10">
+  <!-- navbar start -->
+ <div class="nav-bar-2 flex sm:mx-6 md:mx-10 lg:mx-20 xl:mx-40 justify-between items-center p-2 bg-white/60 px-2 rounded-md shadow-lg">
+  <!-- left buttons -->
+  <div class="flex flex-row items-center">
+    <a href="{% url "index" %}"><img class="h-10 xs:h-14 md:h-24" src="{% static "img/rmclogo.png" %}" alt="">
+    </a>
+
+
+    <button class="" id="installApp">
+      <div class=" relative group">
+        <i class="fa fa-mobile fa-2x"></i>
+        <span class="absolute left-20 transform -translate-x-1/2 -mb-5 hidden group-hover:block px-2 py-1 bg-black text-white text-sm rounded-md z-10">
+            Clique aqui e adicione um atalho do PV e aproveite notificações para novas mensagens e pedidos
+        </span>
+    </div>
+    </button>
+
+    
+    <!-- Toggle Button with Icon -->
+    <button id="toggle-audio">
+      <i class="fa fa-volume-up fa-2x"></i>
+    </button>
+  </div>  
+  <!-- end left buttons -->
+
+
+    <div id="theme-toggle" class="">
+      <div id="light-icon" class="dark:hidden">
+        <i class="fa fa-moon-o fa-2x text-blue-500" aria-hidden="true"></i>
+      </div>
+      
+      <div id="dark-icon" class="hidden dark:block">
+        <i class="fa fa-sun-o fa-2x text-yellow-500"></i>
+      </div>
+    </div>
+    <!-- end right buttons -->
+</div>
+<!-- navbar end-->
+
+
+</div>

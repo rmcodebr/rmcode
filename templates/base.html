@@ -2,36 +2,9 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    {% if is_dvelopment %}
-    {% load static tailwind_tags %}
-    {% tailwind_css %}
-    {% else %}
-    <link href="{% static "css/dist/styles.css" %}" rel="stylesheet" />
-    {% endif %}   
-
-    
+    <link href="{% static "css/dist/styles.css" %}" rel="stylesheet" />    
     <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
     
-    <!-- TOKEN GENERATOR -->
-    <script>
-      function getCookie(name) {
-        let cookieValue = null;
-        if (document.cookie && document.cookie !== '') {
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                const cookie = cookies[i].trim();
-                // Does this cookie string begin with the name we want?
-                if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
-        }
-        return cookieValue;
-    }
-    const csrftoken = getCookie('csrftoken');
-    </script>    
-    <!-- END TOKEN GENERATOR -->
     <meta charset="utf-8" />
     <title>RMCode | {% block title %}{% endblock title %}</title>
     <meta content="width=device-width, initial-scale=1.0 maximum-scale=1" name="viewport" />
@@ -53,13 +26,12 @@
     <link rel="manifest" href="{% static 'manifest.json' %}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="PedeVizinho">
+    <meta name="apple-mobile-web-app-title" content="RMCode">
     <link rel="icon" sizes="16x16 32x32 48x48 72x72 192x192" href="{% static "img/rmclogo.png" %}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}">
 
     {% block head %}{% endblock head %}
-    
   </head>
 
   <style>
@@ -73,31 +45,23 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-  </style>
-  
+  </style>  
 
-  <body class="m-1 mb-32 overflow-x-hidden">
+  <body class="bg-slate-100 dark:bg-slate-900 text-black dark:text-white">
+    <!-- Internet Connection Status-->
+    <div class="internet-connection-status" id="internetStatus"></div>
 
-  <!-- Internet Connection Status-->
-  <div class="internet-connection-status" id="internetStatus"></div>
-
-   
+    {% include "components/navbar.html" %}    
     {% block content %}
-    {% endblock content %}    
- 
-    
+    {% endblock content %}
 
     <!-- JavaScript Libraries -->
-    <script src="{% static "js/main.js" %}"></script>
-   
+    <script src="{% static "js/main.js" %}"></script>   
     <script src="{% static "js/rmToast.js" %}"></script>
-
-
-
-  
 
     <!-- Internet Connection Status-->
     <div class="text-white" id="internetStatus"></div>
     <audio id="audio-element" src="{% static "sound/llv.mp3" %}"></audio>
+
   </body>
 </html>
